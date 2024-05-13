@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Document</title>
+</head>
+<header>
+    <div class="content">
+        <div class="menu container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="assets/logo1.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="form1.html">REQUISITOS</a></li>
+                    <li><a href="index.html">PREGUNTAS FRECUENTES</a></li>
+                    <li><a href="form2.html">ANIMALES EXTRAVIADOS</a></li>
+                    <li><a href="index.html">REGISTRALOS</a></li>
+                    <li><a href="index.html">MIS SOLICITUDES</a></li>  
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<br>
+<body> 
+    <form class="formulario">
+        <div class="campo">
+        <h2><center>FORMULARIO DE REGISTRO PARA SU MASCOTA</center></h2><br>
+        <h3><center>Mascotas registradas son mascotas protegidas...</center></h3><br>
+        <label><u>DATOS DEL DUEÑO:</u></label>
+        <label>NOMBRE</label>
+        <input type="text" id="nombre" placeholder="introduzca nombre" required class="campo_input">
+        </div>
+        
+        <br>
+        <div class="campo">
+        <label>APELLIDOS</label>
+        <input type="text" id="nombre" placeholder="introduzca nombre" required class="campo_input">
+        </div>
+
+        <br>
+        <div class="campo">
+        <label>TELÉFONO</label>
+        <input type="number" id="rut" placeholder="Número de teléono" required class="campo_input">
+        </div>
+
+        <br>
+        <div class="campo">
+        <label>EMAIL</label>
+        <input type="email" id="email" placeholder="introduzca email" required  class="campo_input">
+        </div>
+
+        <br>
+        <div class="campo">
+        <label><u>DATOS DE LA MASCOTA:  </u></label>
+        <label>NOMBRE</label>
+        <input type="text" id="nombre" placeholder="introduzca nombre" required class="campo_input">
+        </div>
+
+        <br>
+        <div class="campo">
+        <label>ESPECIE</label>
+        <select class="campo_input">
+        <option selected disabled>Seleccione una opción</option>
+        <option value="Perro">Perro</option>
+        <option value="Gato">Gato</option>
+        <option value="Gato">ave</option>
+        <option value="Gato">roedor</option>
+        <option value="Otro">Otro</option>
+        </select>
+        </div>
+
+        <br>
+        <div class="campo">
+        <label>EDAD DE LA MASCOTA</label>
+        <input type="number" id="edad" placeholder="introduzca la edad" required min="1"  class="campo_ input">
+        </div>
+
+        <br>
+        <div class="campo">
+        <p>SEXO</p>
+        <label><input type="radio" name="campo" class="campo_radio">Macho</label>
+        <label><input type="radio" name="campo" class="campo_radio">Hembra</label>
+        </div>
+
+        <br>
+        <div class="campo">
+        <p>ESTERILIZADO</p>
+        <label><input type="radio" name="campo" class="campo_radio">Si</label>
+        <label><input type="radio" name="campo" class="campo_radio">No</label>
+        </div>
+        
+        <br>
+        <div class="campo">
+        <label>CÓDIGO DE ESTERILIZACIÓN</label>
+        <input type="password" id="código" placeholder="Introduzca el código" required  class="campo_input">
+        </div>
+
+        <br>
+        <div class="campo">
+        <label>RAZA Y COLOR</label>
+        <input type="text" id="nombre" placeholder="Introducir raza y color" required class="campo_input">
+        </div>
+
+        <br>
+        <div class="campo">
+        <label>MODO DE OBTENCIÓN</label>
+        <p>(*Si su mascota es adoptada seleccione Recogido o Reubicado)</p>
+        <select class="campo_input">
+        <option selected disabled>Seleccione una opción</option>
+        <option value="Recogido">Recogido</option>
+        <option value="Reubicado">Reubicado</option>
+        <option value="Regalo">Regalo</option>
+        <option value="Nacido en casa">Nacido en casa</option>
+        <option value="Compra">Compra</option>
+        <option value="Otro">Otro</option>
+        </select>
+        </div>
+
+        <br>
+        <div class="campo">
+        <label>RAZÓN DE TENENCIA</label>
+        <select class="campo_input">
+        <option selected disabled>Seleccione una opción</option>
+        <option value="Compañia">Compañia</option>
+        <option value="Asistencia">Asistencia</option>
+        <option value="Terapia">Terapia</option>
+        <option value="Trabajo">Trabajo</option>
+        <option value="Seguridad">Seguridad</option>
+        <option value="Deporte">Deporte</option>
+        <option value="Exposición">Exposición</option>
+        <option value="Reproducción">Reproducción</option>
+        <option value="Caza">Caza</option>
+        <option value="Otro">Otro</option>
+        </select>
+        </div>
+
+        <br>
+        <div class="campo">
+        <p>OBSERVACIONES O DATOS PARTICULARES DE LA MASCOTA</p>
+        <textarea class="campo_textarea" placeholder="Describir alguna situación especial dela mascota..."></textarea>
+        </div>
+
+        <br>
+        <div class="campo">
+        <label><u>DATOS MÉDICO VETERINARIO o TÉCNICO VETERINARIO:</u></label>
+        <label>NOMBRES</label>
+        <input type="text" id="nombre" placeholder="introduzca su nombre" required class="campo_input">
+        </div>
+
+        <br>
+        <div class="campo">
+        <label>APELLIDOS</label>
+        <input type="text" id="apellido" placeholder="introduzca su apellido" required class="campo_input">
+        </div>
+
+        <br>
+        <div class="campo">
+        <label>RUT o COMUNA</label>
+        <input type="number" id="rut" placeholder="Rut o Comuna" required class="campo_input">
+        </div>
+
+        <br>
+        <div class="campo">
+        <p>ROL</p>
+        <label><input type="radio" name="campo" class="campo_radio">Médico veterinario</label>
+        <label><input type="radio" name="campo" class="campo_radio">Técnico veterinario</label>
+        </div>
+
+        <br>
+        <div class="campo">
+        <label>FECHA DE PROCEDIMIENTO</label>
+        <input type="date" id="rut" placeholder="Rut o Comuna" required class="campo_input">
+        </div>
+
+        <br>
+        <div class="campo">
+        <p>TIPO DE PROCEDIMIENTO</p>
+        <p>Procedimientos realizados</p>
+        <label><input type="checkbox" class="campo_radio" value="Implantación">Implantación</label>
+        <label><input type="checkbox" class="campo_radio" value="Verificación">Verificación</label>
+        <label><input type="checkbox" class="campo_radio" value="Consulta">Consulta</label>
+        <label><input type="checkbox" class="campo_radio" value="Chequeo mensual">Chequeo mensual</label>
+        <label><input type="checkbox" class="campo_radio" value="Otros">Otros</label>
+        </div>
+
+        <br>
+        <div class="campo">
+        <p>OBSERVACIONES Y RESULTADOS</p>
+        <textarea class="campo_textarea" placeholder="Observaciones del Médico - Técnico veterinario"></textarea>
+        </div>
+ 
+        <br>
+        <div class="campo">
+            <input type="submit" value="Enviar" class="campo_input">
+        </div>
+        <br>
+        <div class="campo">
+            <input type="reset" value="Limpiar" class="campo_input">
+        </div>
+    </form>
+</body>
+</html>
